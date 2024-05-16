@@ -791,20 +791,21 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 8%;
     margin-left: 10%;
   }
-  .footers .copyrights {
+  .copyrights {
+    text-align: center;
     color: white;
   }
-  .footers .copyrights p {
+  .copyrights p {
     padding: 1% 0.1% 1% 1%;
     color: white;
   }
-  .footers .copyrights h2 {
+  .copyrights h2 {
     font-family: chillax medium;
     font-weight: normal;
     padding: 1% 0 1% 0;
     color: white;
   }
-  .footers .copyrights h1 {
+  .copyrights h1 {
     font-family: chillax medium;
     color: white;
     font-weight: 900;
