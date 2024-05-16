@@ -197,7 +197,6 @@ nav .sidebar li .menu-button {
 .services h1 {
   font-size: 20px;
   width: 100%;
-  padding-top: 18%;
 }
 .services p {
   font-size: 18px;
@@ -838,7 +837,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     color: white;
     font-weight: 50;
     font-size: 15px;
-    padding-top: 6px;
+    padding-top: 67px;
   }
   #triangle {
     width: 45%;
@@ -933,7 +932,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .intro h2 {
     font-size: 25px;
-    font-weight: 900;
   }
   .intro #profile {
     margin-right: 36%;
@@ -953,9 +951,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 6%;
   }
   .services h1 {
-    padding-top: 9%;
+    padding-top: 1%;
     font-size: 300%;
     width: 100%;
+  }
+  .services h2 {
+    font-size: 25px;
+    padding-top: 9%;
   }
   .services p {
     font-size: 100%;
