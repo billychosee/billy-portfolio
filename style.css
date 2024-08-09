@@ -1060,6 +1060,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .portfolio #m {
     margin-left: 3%;
+    width: 93.3%;
   }
   .portfolio .port-content h2 {
     font-size: 25px;
