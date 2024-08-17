@@ -20,7 +20,7 @@
         <ul>
             <li><a href="#"><img src="./img/dark theme/billy k logo light.png" alt=""></a></li>
             <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile" onclick="scrollToSection('about')"><a href="#">About</a></li>
             <li onclick="scrollToBottom()" class="tags" id="scrollBottom" class="hideOnMobile"><a href="#">Contact</a></li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="close-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" ><path fill="#ffffff" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
@@ -44,8 +44,8 @@
               
             <p class="para-work">Step into my digital domain! a creative powerhouse proficient in Web Development, UX/UI Design, Graphic Design, Digital Marketing, and the dynamic realm of Scratch programming. Explore my portfolio and discover how I merge technical finesse with artistic flair to craft immersive digital narratives.</p>
            <div class="buttons">
-                <button class="portfolio-btn">Portfolio</button>
-                <button class="services-btn">Services</button>
+            <button class="portfolio-btn" onclick="scrollToSection('portfoli')">Portfolio</button>
+            <button class="services-btn" onclick="scrollToSection('service')">Services</button>
            </div>
         </div> 
             <img src="./img/dark theme/circles light.png" alt="" id="last-img">
@@ -74,7 +74,7 @@
 <!-- end intro -->
 
 <!-- start services -->
-<section class="services">
+<section  id="service" class="services">
     <h2>My</h2>
     <h1>Services</h1>
     <p>Enhance your digital presence with my comprehensive services in web development, UX/UI design, graphic design, digital marketing, and game development. Guided by my expertise, I deliver captivating experiences across platforms, ensuring your brand stands out in today's digital landscape.</p>
@@ -93,7 +93,7 @@
 <!-- end services -->
 
 <!-- start porftfolio -->
-<section class="portfolio">
+<section id="portfoli" class="portfolio">
     <div class="port-content">
         <h2>Portfolio</h2>
         <h1>My Recent Work</h1>

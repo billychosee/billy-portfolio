@@ -195,8 +195,9 @@ nav .sidebar li .menu-button {
   text-align: center;
 }
 .services h1 {
-  font-size: 20px;
+  font-size: 40px;
   width: 100%;
+  margin-top: 40px;
 }
 .services p {
   font-size: 18px;
@@ -952,9 +953,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 6%;
   }
   .services h1 {
-    padding-top: 1%;
-    font-size: 300%;
+    font-size: 40px;
     width: 100%;
+    margin-top: 10px;
   }
   .services h2 {
     font-size: 25px;
