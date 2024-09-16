@@ -10,21 +10,54 @@
 </head>
 <body>
 <!-- start nav -->
-    <nav class="header">
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg class="burger-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#ffffff" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a class="tags" href="#">Home</a></li>
-            <li><a class="tags" href="#">About</a></li>
-            <li><a onclick="scrollToBottom()" class="tags" id="scrollBottom" href="#">Contact</a></li>
-        </ul>
-        <ul>
-            <li><a href="#"><img src="./img/dark theme/billy k logo light.png" alt=""></a></li>
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile" onclick="scrollToSection('about')"><a href="#">About</a></li>
-            <li onclick="scrollToBottom()" class="tags" id="scrollBottom" class="hideOnMobile"><a href="#">Contact</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="close-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" ><path fill="#ffffff" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-    </nav>
+  <nav class="header">  
+    <ul class="sidebar">  
+        <li onclick="hideSidebar()">  
+            <a href="#">  
+                <svg class="burger-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">  
+                    <path fill="#ffffff" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>  
+                </svg>  
+            </a>  
+        </li>  
+        <li><a class="tags" href="#" onclick="scrollToSection('home')">Home</a></li>  
+        <li><a class="tags" href="#" onclick="scrollToSection('about')">About</a></li>  
+        <li><a class="tags" href="#" onclick="scrollToBottom()">Contact</a></li>  
+    </ul>  
+    <ul>  
+        <li><a href="#"><img src="./img/dark theme/billy k logo light.png" alt=""></a></li>  
+        <li class="hideOnMobile"><a href="#" onclick="scrollToSection('home')">Home</a></li>  
+        <li class="hideOnMobile"><a href="#" onclick="scrollToSection('about')">About</a></li>  
+        <li class="hideOnMobile"><a href="#" onclick="scrollToBottom()">Contact</a></li>  
+        <li class="menu-button" onclick="showSidebar()">  
+            <a href="#">  
+                <svg class="close-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">  
+                    <path fill="#ffffff" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>  
+                </svg>  
+            </a>  
+        </li>  
+    </ul>  
+</nav>  
+
+<script>  
+    function scrollToSection(sectionId) {  
+        const section = document.getElementById(sectionId);  
+        if (section) {  
+            section.scrollIntoView({ behavior: 'smooth' });  
+        }  
+    }  
+
+    function scrollToBottom() {  
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });  
+    }  
+
+    function hideSidebar() {  
+        // Logic to hide sidebar  
+    }  
+
+    function showSidebar() {  
+        // Logic to show sidebar  
+    }  
+</script>
 <!-- end nav -->
 
 <!-- start hero -->
@@ -60,7 +93,7 @@
     <h2>Introduction</h2>
     <h1>Who Am I</h1>
     <P>Welcome! I'm a creative expert skilled in Web Development, UX/UI Design, Graphic Design, Digital Marketing, and Scratch programming. Explore my portfolio for captivating websites, user-friendly interfaces, eye-catching graphics, and strategic marketing campaigns. Check out my resume for highlights of my skills and achievements. Let's connect!</P>
-    <br>  <a href="./img/ResumesforBilly_14a3729bdd3946dd9f222da318e6474f_output_e9d50a9c398941019ec9b012667102db.pdf"><button class="isb">Resume pdf <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></button></a>
+    <br>  <a href="./img/Billy Kadyamatimba Resume.pdf"><button class="isb">Resume pdf <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffffff" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></button></a>
     </div>
     <div id="profile">
         <img src="./img/dark theme/hoder - Copy 1@2x.png" alt="bg-img" id="one">
