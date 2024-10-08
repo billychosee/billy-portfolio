@@ -326,7 +326,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: none;
   }
   .hero .content {
-    width: 400px;
     font-size: 13px;
     color: white;
   }
