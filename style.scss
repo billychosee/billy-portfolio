@@ -1427,45 +1427,36 @@ button{
     }
    }
 
-   .circles-info{
+   .circles-info {
+    /* For individual circles */
+    .one, .two, .three, .four {
+        border: 1px solid white;
+        width: 17%;
+        height: 18%;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: 10%;
+        display: flex; /* Enables Flexbox */
+        justify-content: center; /* Centers the icon horizontally */
+        align-items: center; /* Centers the icon vertically */
+    }
 
-    .one{
-        border: 1px solid white;
-        width: 17%;
-        height: 18%;
-        border-radius: 50%;
-        background-color: white;
+    /* Specific margins for individual divs */
+    .one {
         margin-top: 0%;
-        margin-left: 10%
     }
-    .two{
-        border: 1px solid white;
-        width: 17%;
-        height: 18%;
-        border-radius: 50%;
-        background-color: white;
+
+    .two, .three, .four {
         margin-top: 8%;
-        margin-left: 10%
     }
-    .three{
-        border: 1px solid white;
-        width: 17%;
-        height: 18%;
-        border-radius: 50%;
-        background-color: white;
-        margin-top: 8%;
-        margin-left: 10%
-    }
-    .four{
-        border: 1px solid white;
-        width: 17%;
-        height: 18%;
-        border-radius: 50%;
-        background-color: white;
-        margin-top: 8%;
-        margin-left: 10%
-    }
-   }
+}
+
+.circles-info img {
+    width: 70%; /* Resize the icon inside the circle */
+    height: 70%;
+    object-fit: contain; /* Maintain the aspect ratio */
+}
+
 
    .copyrights{
     display: flex;
