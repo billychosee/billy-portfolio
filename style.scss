@@ -1428,34 +1428,28 @@ button{
    }
 
    .circles-info {
-    /* For individual circles */
     .one, .two, .three, .four {
         border: 1px solid white;
-        width: 17%;
-        height: 18%;
+        width: 40px; /* Moderate size */
+        height: 40px; /* Keep 1:1 ratio */
         border-radius: 50%;
         background-color: white;
         margin-left: 10%;
-        display: flex; /* Enables Flexbox */
-        justify-content: center; /* Centers the icon horizontally */
-        align-items: center; /* Centers the icon vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-    /* Specific margins for individual divs */
-    .one {
-        margin-top: 0%;
-    }
-
     .two, .three, .four {
         margin-top: 8%;
     }
 }
 
 .circles-info img {
-    width: 70%; /* Resize the icon inside the circle */
-    height: 70%;
-    object-fit: contain; /* Maintain the aspect ratio */
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    object-fit: contain;
 }
+
 
 
    .copyrights{

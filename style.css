@@ -1223,32 +1223,25 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     padding-top: 12%;
     font-size: 20px;
   }
-  .circles-info {
-    /* For individual circles */
-    /* Specific margins for individual divs */
-  }
   .circles-info .one, .circles-info .two, .circles-info .three, .circles-info .four {
     border: 1px solid white;
-    width: 17%;
-    height: 18%;
+    width: 40px; /* Moderate size */
+    height: 40px; /* Keep 1:1 ratio */
     border-radius: 50%;
     background-color: white;
     margin-left: 10%;
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers the icon horizontally */
-    align-items: center; /* Centers the icon vertically */
-  }
-  .circles-info .one {
-    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .circles-info .two, .circles-info .three, .circles-info .four {
     margin-top: 8%;
   }
   .circles-info img {
-    width: 70%; /* Resize the icon inside the circle */
-    height: 70%;
+    width: 20px; /* Adjust icon size */
+    height: 20px;
     -o-object-fit: contain;
-       object-fit: contain; /* Maintain the aspect ratio */
+       object-fit: contain;
   }
   .copyrights {
     display: flex;
